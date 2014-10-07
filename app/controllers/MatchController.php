@@ -9,7 +9,7 @@ class MatchController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Response::json(Match:get());
+		return Response::json(Match::get());
 	}
 
 
@@ -27,6 +27,18 @@ class MatchController extends \BaseController {
 			));
 
 		return Response::json(array('success' => true));
+	}
+
+
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function show($id)
+	{
+		return Response::json(Match::get($id));
 	}
 
 
