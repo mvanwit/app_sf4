@@ -20,7 +20,7 @@ class MatchController extends \BaseController {
 	 */
 	public function store()
 	{
-		Comment::create(array(
+		Match::create(array(
 				'my_char' => Input::get('my_char'),
 				'op_char' => Input::get('op_char'),
 				'result' => Input::get('result')

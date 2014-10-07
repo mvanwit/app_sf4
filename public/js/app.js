@@ -1,0 +1,1 @@
+var sf4MatchApp = angular.module('sf4MatchApp', ['mainCtrl', 'matchService']);
